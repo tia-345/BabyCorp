@@ -1,70 +1,118 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# BabyCorp 🩵
 
-## Available Scripts
+### Parenting is better together.
 
-In the project directory, you can run:
+BabyCorp is a community-based parenting support platform designed to connect parents and caregivers with healthcare professionals. It aims to provide a supportive space where parents can share experiences, seek guidance, and manage important aspects of their baby's development.
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **User Authentication:** Secure registration and login for parents and healthcare professionals.
+- **Professional Verification:** Admin approval system for healthcare professionals.
+- **Parenting Community:** A platform for parents to connect and share experiences.
+- **Baby Care Tracking:** Vaccination records, growth tracking, and developmental milestones.
+- **Expert Guidance:** Access to healthcare professionals for parenting-related questions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🛠️ Tech Stack
 
-### `npm test`
+| Technology | Purpose |
+|---|---|
+| React.js | Frontend |
+| Node.js | Backend runtime |
+| Express.js | Backend framework |
+| MongoDB | Database |
+| Mongoose | Database modelling |
+| JWT | Authentication |
+| bcrypt | Password hashing |
+| Multer | File uploads |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📁 Project Structure
 
-### `npm run build`
+```text
+BabyCorp/
+├── backend/
+│   ├── config/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── server.js
+│   └── package.json
+├── public/
+├── src/
+├── .gitignore
+└── package.json
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js
+- MongoDB
+- npm
 
-### `npm run eject`
+### 1. Clone the repository
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone https://github.com/tia-345/BabyCorp.git
+cd BabyCorp
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2. Install frontend dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm install
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 3. Install backend dependencies
 
-## Learn More
+```bash
+cd backend
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 4. Configure environment variables
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Create a `.env` file inside the backend folder with your own local configuration:
 
-### Code Splitting
+```env
+PORT=5000
+MONGO_URI=mongodb://127.0.0.1:27017/babycorp
+JWT_SECRET=your_secret_key
+CLIENT_URL=http://localhost:3000
+NODE_ENV=development
+ADMIN_EMAIL=your_admin_email
+ADMIN_PASSWORD=your_admin_password
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Never commit your actual `.env` file or credentials.
 
-### Analyzing the Bundle Size
+### 5. Start the backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+From the backend folder:
 
-### Making a Progressive Web App
+```bash
+npm run dev
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 6. Start the frontend
 
-### Advanced Configuration
+Open another terminal in the project root:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+npm start
+```
 
-### Deployment
+Frontend: http://localhost:3000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Backend: http://localhost:5000
 
-### `npm run build` fails to minify
+## 👩‍💻 Developer
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Tia**
+
+BCA Final Year Project
+
+---
+
+*BabyCorp – Supporting parents, one milestone at a time.*
